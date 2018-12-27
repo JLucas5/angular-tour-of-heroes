@@ -5,14 +5,7 @@
         <a href="#!" [class.active]="hero === selectedHero" *ngFor="let hero of heroes" (click)="onSelect(hero)" class="collection-item"><div>{{hero.id}}. {{hero.name}}<i class=" secondary-content material-icons">send</i></div></a>
     </ul>
   </div>
-  
-  <div class="col s4 push-s4 card-panel" *ngIf="selectedHero">
-    <h2 class="flow-text">{{selectedHero.name | uppercase}} Details</h2>
-    <div><span>Id: </span>{{selectedHero.id}}</div>
-    <div>
-      <label>
-        <input  [(ngModel)]="selectedHero.name" placeholder="selectedHero.name">
-      </label>
-    </div>
-  </div>  
+
+  <app-hero-detail [hero]="selectedHero"></app-hero-detail>
+
 </div>

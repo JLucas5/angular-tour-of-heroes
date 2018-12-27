@@ -1,0 +1,11 @@
+<div class="col s4 push-s4 card-panel" *ngIf="hero">
+
+  <h2 class="flow-text">{{hero.name | uppercase}} Details</h2>
+  <div><span>Id: </span>{{hero.id}}</div>
+  <div>
+    <label>
+      <input  [(ngModel)]="hero.name" placeholder="hero.name">
+    </label>
+  </div>
+
+</div> 
