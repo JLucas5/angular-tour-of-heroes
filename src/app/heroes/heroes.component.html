@@ -2,7 +2,7 @@
   <div class="col s4">
     <ul style="background-color: #fffaeb" class="collection with-header">
         <li class="collection-header"><h3>My Heroes</h3></li>
-        <a href="#!" [class.active]="hero === selectedHero" *ngFor="let hero of heroes" (click)="onSelect(hero)" class="collection-item"><div>{{hero.id}}. {{hero.name}}<i class=" secondary-content material-icons">send</i></div></a>
+        <a [class.active]="hero === selectedHero" *ngFor="let hero of heroes" (click)="onSelect(hero)" class="collection-item"><div>{{hero.id}}. {{hero.name}}<i class=" secondary-content material-icons">send</i></div></a>
     </ul>
   </div>
 
